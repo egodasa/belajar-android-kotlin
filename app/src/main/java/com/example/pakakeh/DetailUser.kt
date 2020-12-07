@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_detail_user.*
-import kotlinx.android.synthetic.main.activity_selanjutnya.*
 import org.w3c.dom.Text
 
 class DetailUser : AppCompatActivity() {
@@ -22,8 +21,7 @@ class DetailUser : AppCompatActivity() {
 
     // set semua event ke control
     private fun setEvent() {
-        // Bkembali dan Bganti adalah id dari view
-        this.Bkembali.setOnClickListener(this.Kembali)
+        this.Bback.setOnClickListener(this.Kembali)
         this.Bganti.setOnClickListener(this.GantiText)
     }
 
@@ -33,6 +31,6 @@ class DetailUser : AppCompatActivity() {
     }
 
     private val GantiText = View.OnClickListener {
-        Tlayout.text = Tteks.text
+        this.Tlayout.setText(Tteks.text.toString())
     }
 }
