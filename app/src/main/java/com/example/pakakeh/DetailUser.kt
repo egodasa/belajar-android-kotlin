@@ -7,23 +7,32 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_detail_user.*
+import kotlinx.android.synthetic.main.activity_selanjutnya.*
 import org.w3c.dom.Text
 
 class DetailUser : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_user)
+        setEvent()
+    }
 
-        val Bkembali: Button = findViewById(R.id.Bback)
-        Bkembali.setOnClickListener {
-            finish()
-        }
+    // set semua event ke control
+    private fun setEvent() {
+        // Bkembali dan Bganti adalah id dari view
+        this.Bkembali.setOnClickListener(this.Kembali)
+        this.Bganti.setOnClickListener(this.GantiText)
+    }
 
-        val Bganti: Button = findViewById(R.id.Bganti)
-        val Tlayout: TextView = findViewById(R.id.Tlayout)
-        val Tteks: TextView = findViewById(R.id.Tteks)
-        Bganti.setOnClickListener{
-            Tlayout.setText(Tteks.text.toString())
-        }
+    // list fungsi event
+    private val Kembali = View.OnClickListener {
+        finish()
+    }
+
+    private val GantiText = View.OnClickListener {
+        Tlayout.text = Tteks.text
     }
 }
