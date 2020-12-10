@@ -3,4 +3,40 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="bt4PrimaryBackgroundColor">#007BFF</color>
+    <color name="bt4PrimaryColor">#FFFFFF</color>
+
+    <color name="bt4SecondaryBackgroundColor">#6C757D</color>
+    <color name="bt4SecondaryColor">#FFFFFF</color>
+    
+    <color name="bt4SuccessBackgroundColor">#28A745</color>
+    <color name="bt4SuccessColor">#FFFFFF</color>
+
+    <color name="bt4DangerBackgroundColor">#DC3545</color>
+    <color name="bt4DangerColor">#FFFFFF</color>
+
+    <color name="bt4WarningBackgroundColor">#FFC107</color>
+    <color name="bt4WarningColor">#212529</color>
+
+    <color name="bt4InfoBackgroundColor">#17A2B8</color>
+    <color name="bt4InfoColor">#FFFFFF</color>
+
+    <color name="bt4LightBackgroundColor">#F8F9FA</color>
+    <color name="bt4LightColor">#212529</color>
+
+    <color name="bt4DarktBackgroundColor">#343A40</color>
+    <color name="bt4DarkColor">#FFFFFF</color>
+
+    <color name="bt4BlueColor">#007BFF</color>
+    <color name="bt4IndogoColor">#6610F2</color>
+    <color name="bt4PurpleColor">#6F42C1</color>
+    <color name="bt4PinkColor">#E83E8C</color>
+    <color name="bt4RedColor">#DC3545</color>
+    <color name="bt4OrangeColor">#FD7E14</color>
+    <color name="bt4YellowColor">#FFC107</color>
+    <color name="bt4GreenColor">#28A745</color>
+    <color name="bt4TealColor">#20C997</color>
+    <color name="bt4CyanColor">#17A2b8</color>
+
 </resources>

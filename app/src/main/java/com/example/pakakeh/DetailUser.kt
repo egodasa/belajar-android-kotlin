@@ -21,16 +21,25 @@ class DetailUser : AppCompatActivity() {
 
     // set semua event ke control
     private fun setEvent() {
-        this.Bback.setOnClickListener(this.Kembali)
-        this.Bganti.setOnClickListener(this.GantiText)
+        val btnBack: Button = findViewById(R.id.Bback)
+        val btnGanti: Button = findViewById(R.id.Bganti)
+
+        btnBack.setOnClickListener(this.eventKembali())
+        btnGanti.setOnClickListener(this.eventGantiText())
     }
+
 
     // list fungsi event
-    private val Kembali = View.OnClickListener {
-        finish()
+    private fun eventKembali(): View.OnClickListener {
+        return View.OnClickListener {
+            finish()
+        }
     }
 
-    private val GantiText = View.OnClickListener {
-        this.Tlayout.setText(Tteks.text.toString())
+    private fun eventGantiText(): View.OnClickListener {
+        return View.OnClickListener {
+            val tlayout = findViewById<TextView>(R.id.Tlayout)
+            tlayout.setText(Tteks.text.toString())
+        }
     }
 }

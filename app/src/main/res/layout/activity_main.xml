@@ -1,65 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/LberatBadan"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Berat Badan (Kg)"
-        android:textColor="#000000" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/berat_badan"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/TberatBadan"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="" />
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LberatBadan" />
 
     <TextView
         android:id="@+id/LtinggiBadan"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Tinggi Badan (M)"
-        android:textColor="#000000" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/tinggi_badan"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TberatBadan" />
 
     <EditText
         android:id="@+id/TtinggiBadan"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="" />
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LtinggiBadan" />
 
     <Button
         android:id="@+id/Bhitung"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hitung BMI"
-        android:textColor="#FFFFFF"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="256dp"
+        android:background="@color/bt4PrimaryBackgroundColor"
+        android:text="@string/hitung"
+        android:textColor="@color/bt4PrimaryColor"
         android:textColorHighlight="#03A9F4"
-        android:textColorLink="#03A9F4" />
+        android:textColorLink="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TtinggiBadan" />
 
     <TextView
         android:id="@+id/Lhasil"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Silahkan klik hitung!"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/silahkan_klik_hitung"
         android:textAlignment="center"
-        android:textColor="#2196F3" />
+        android:textColor="@color/bt4CyanColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bhitung" />
 
     <Button
         android:id="@+id/Bselanjutnya"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Activity Lain" />
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="96dp"
+        android:background="@color/bt4SuccessBackgroundColor"
+        android:text="@string/activity_lain"
+        android:textColor="@color/bt4SuccessColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lhasil" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/bt4DangerBackgroundColor"
+        android:text="@string/reset"
+        android:textColor="@color/bt4DangerColor"
+        app:layout_constraintBottom_toTopOf="@+id/Lhasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Bhitung"
+        app:layout_constraintTop_toBottomOf="@+id/TtinggiBadan"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

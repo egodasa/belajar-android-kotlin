@@ -3,4 +3,11 @@
     <string name="btnCari_text">Tekan Disini</string>
     <string name="Tcari_value"> </string>
     <string name="Ltulisan_text">Ini Pakakeh!</string>
+    <string name="berat_badan">Berat Badan (Kg)</string>
+    <string name="tinggi_badan">Tinggi Badan (Meter)</string>
+    <string name="hitung">Hitung</string>
+    <string name="reset">Reset</string>
+    <string name="silahkan_klik_hitung">Silahkan Klik Hitung</string>
+    <string name="activity_lain">Activity Lain</string>
+    <string name="hitung_bmi">Hitung BMI</string>
 </resources>
